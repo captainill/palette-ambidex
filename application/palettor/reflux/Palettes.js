@@ -12,32 +12,6 @@ var Palettes = {
     init: function () {
       this.state = [];
     },
-    /*
-    onGetPalettes: function (paletteID) {
-      console.log(' -----onGetPalettes ');
-      if (this.state[paletteID]) {
-        this.trigger(this.state);
-
-        if (!this.settings.CUSTOM_SETTINGS["ACTIONS_UPDATE_CACHED_DATA"]) {
-          return;
-        }
-      }
-
-      this.getPaletteFromAPI(paletteID).then(
-        palette => {
-          palette = PaletteModel.fromBikeIndex(
-            palette,
-            PaletteModel.DetailLevel.FULL
-          );
-
-          this.state[paletteID] = palette;
-          this.trigger(this.state);
-        }
-
-      ).catch(
-        error => console.error(error.stack)
-      );
-    },*/
 
     onGetAllPalettes: function () {
       this.getAllPalettesFromAPI().then(
@@ -51,13 +25,7 @@ var Palettes = {
           console.error(error.stack)
         }
       );
-    },    
-
-    /*getPaletteFromAPI: function (paletteID) {
-      return this.getFromAPI(`palette/${ paletteID }/`).then(
-        dict => dict.palette
-      );
-    },*/
+    },
 
     getAllPalettesFromAPI: function () {
       return this.getFromAPI('palettes').then(
