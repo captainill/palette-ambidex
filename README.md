@@ -6,7 +6,7 @@ This is an example built off of [**Ambidex**](https://github.com/appsforartists/
 
 #### Grab the restify server ####
     I'm using a simple to power this example:
-  -[restify server](https://github.com/captainill/palette-restify/)
+  - [restify server](https://github.com/captainill/palette-restify/)
 
 #### Install the dependencies ####
     npm install
