@@ -3,8 +3,7 @@ var utilities    = require("ambidex").addons.utilities;
 var refluxActionsForRouterState = [
   {
     actionName:     "getMyPalettes",
-    storeName:      "MyPalettes",
-    isReady:        utilities.hasContent
+    storeName:      "MyPalettes"
   }
 ];
 

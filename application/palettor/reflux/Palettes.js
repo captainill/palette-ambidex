@@ -9,14 +9,14 @@ var Palettes = {
 
   store: Object.assign({
     init: function () {
-      this.state = [];
+      this.state = {};
     },
 
     onGetAllPalettes: function () {
       this.getAllPalettesFromAPI().then(
         response => {
           console.log('response=', response);
-          this.state = response;
+          this.state = {'response': response};
           this.trigger(this.state);
         }
 

@@ -22,7 +22,7 @@ var MyPalettes = {
     },
 
     onGetMyPalettes: function () {
-      return this.parent.actions.getAllPalettes();
+      this.parent.actions.getAllPalettes();
     }
   }
 };
