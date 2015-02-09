@@ -1,11 +1,11 @@
 ## Introduction ##
 
-This is an example built off of[**Ambidex**](https://github.com/appsforartists/Ambidex/).  For more information, **please see [that repo](https://github.com/appsforartists/Ambidex/)**.
+This is an example built off of [**Ambidex**](https://github.com/appsforartists/Ambidex/).  For more information, **please see [that repo](https://github.com/appsforartists/Ambidex/)**.
 
 ## Getting Started ##
 
-#### Clone the repository ####
-    git clone git@github.com:captainill/ambidex-bike-example.git
+#### Grab the restify server ####
+    I'm using a simple [**restify server**](https://github.com/captainill/palette-restify/) to power this example
 
 #### Install the dependencies ####
     npm install
