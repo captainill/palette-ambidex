@@ -4,7 +4,6 @@ var Lazy = require("lazy.js");
 
 var Palettes = {
   actions: [
-    "getPalettes",
     "getAllPalettes"
   ],
 
@@ -16,6 +15,7 @@ var Palettes = {
     onGetAllPalettes: function () {
       this.getAllPalettesFromAPI().then(
         response => {
+          console.log('response=', response);
           this.state = response;
           this.trigger(this.state);
         }

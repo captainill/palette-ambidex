@@ -3,7 +3,6 @@ var Lazy = require("lazy.js");
 var MyPalettes = {
   dependencies: {
     actions:   [
-      "getPalettes",
       "getAllPalettes"
     ],
 
@@ -18,11 +17,12 @@ var MyPalettes = {
 
   store: {
     init: function () {
+
       this.state = [];
     },
 
     onGetMyPalettes: function () {
-      this.parent.actions.getAllPalettes();
+      return this.parent.actions.getAllPalettes();
     }
   }
 };
