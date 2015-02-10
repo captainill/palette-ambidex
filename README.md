@@ -4,8 +4,10 @@ This is an example built off of [**Ambidex**](https://github.com/appsforartists/
 
 ## Getting Started ##
 
-#### Grab the restify server ####
-    I'm using a simple to power this example:
+#### The REST service is now deployed to heroku ####
+  - https://palette-restify.herokuapp.com/api/v1/palettes
+
+    REST server source here:
   - [restify server](https://github.com/captainill/palette-restify/)
 
 #### Install the dependencies ####
