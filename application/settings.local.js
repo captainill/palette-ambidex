@@ -11,7 +11,8 @@ module.exports = Lazy(commonSettings).merge(
     WEBPACK_PORT: "8081",
 
     CUSTOM_SETTINGS: {
-      API_BASE_URL: "http://localhost:7070/api/v1/",
+      //API_BASE_URL: "http://localhost:7070/api/v1/",
+      API_BASE_URL: "https://palette-restify.herokuapp.com/api/v1/",
     }
   }
 ).toObject();
