@@ -2,9 +2,9 @@ module.exports = {
   NAME:         "Ultratext Proto",
   SHORT_NAME:   "ultra-proto",
   FAV_ICON_URL: "/static/palettor/images/logo.svg",
-  
+
   TITLE_SEPARATOR: " - ",
-  
+
   FILESYSTEM_PATHS: {
     BASE: __dirname,
     ROUTES: "routes.jsx",
@@ -16,7 +16,7 @@ module.exports = {
 
   CUSTOM_SETTINGS: {
     STATIC_URL: "/static/",
-    API_BASE_URL: "https://bikeindex.org/api/v2/",
+    API_BASE_URL: "https://palette-restify.herokuapp.com/api/v1/palettes/",
     ACTIONS_UPDATE_CACHED_DATA: true
   }
 };

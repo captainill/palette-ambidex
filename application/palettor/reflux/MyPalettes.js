@@ -17,12 +17,21 @@ var MyPalettes = {
 
   store: {
     init: function () {
-
       this.state = [];
+
+      this.listenTo(
+        this.parent.stores.Palettes,
+        this.onPalettesUpdated
+      );
     },
 
     onGetMyPalettes: function () {
       this.parent.actions.getAllPalettes();
+    },
+
+    onPalettesUpdated: function (palettes) {
+      this.state = palettes;
+      this.trigger(this.state);
     }
   }
 };

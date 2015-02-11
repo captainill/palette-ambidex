@@ -16,7 +16,7 @@ var Palettes = {
       this.getAllPalettesFromAPI().then(
         response => {
           console.log('response=', response);
-          this.state = {'response': response};
+          this.state = response;
           this.trigger(this.state);
         }
 
@@ -31,7 +31,7 @@ var Palettes = {
       return this.getFromAPI('palettes').then(
         response => response
       );
-    }    
+    }
   },
 
   require("./mixins/getFromAPI.js")
