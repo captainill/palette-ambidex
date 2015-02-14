@@ -1,6 +1,6 @@
 ## Introduction ##
 
-This is an example built off of [**Ambidex**](https://github.com/appsforartists/Ambidex/).  For more information, **please see [that repo](https://github.com/appsforartists/Ambidex/)**.
+This is an example app built with [**Ambidex**](https://github.com/appsforartists/Ambidex/).  For more information, **please see [that repo](https://github.com/appsforartists/Ambidex/)**.
 
 ## Getting Started ##
 

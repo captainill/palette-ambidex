@@ -15,28 +15,29 @@ var PaletteList = React.createClass({
         <div className= "Palettes">
           {
             this.state.myPalettes.map(
-              palette =>  <div>
-                            <h2>
-                              { palette.name }
-                            </h2>
-                            <ul>
+              palette =>  ( 
+                <div>
+                  <h2>{ palette.name }</h2>
+                  <ul>{
+                      palette.hexList.map(
+                        color =>  (
+                          <li
+                            style= {
                               {
-                                palette.hexList.map(
-                                  color =>  <li
-                                              style = {
-                                                        {
-                                                          width:            16,
-                                                          height:           16,
-                                                          margin:           8,
-                                                          backgroundColor:  color,
-                                                          listStyle:        "none"
-                                                        }
-                                                      }
-                                            />
-                                )
+                                width:            16,
+                                height:           16,
+                                margin:           8,
+                                backgroundColor:  color,
+                                listStyle:        "none"
                               }
-                            </ul>
-                          </div>
+                            }
+                          />
+                        )
+                      )
+                    }
+                  </ul>
+                </div>
+              )
             )
           }
         </div>

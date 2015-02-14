@@ -7,12 +7,14 @@ RouteHandler = ReactRouter.RouteHandler;
 var Main = React.createClass({
 
     render: function () {
-      return  <div className = "Main">
-                <div className = "Content">
-                  <RouteHandler />
-                </div>
-                { this.props.paletteList }
-              </div>;
+      return (
+        <div className = "Main">
+          <div className = "Content">
+            <RouteHandler />
+          </div>
+          { this.props.paletteList }
+        </div>
+      )
     }
   }
 );
