@@ -1,4 +1,4 @@
-var Lazy = require("lazy.js");
+  var Lazy = require("lazy.js");
 
 var MyPalettes = {
   dependencies: {
@@ -30,6 +30,7 @@ var MyPalettes = {
     },
 
     onPalettesUpdated: function (palettes) {
+      console.log('------MyPalettes onPalettesUpdated', palettes);
       this.state = palettes;
       this.trigger(this.state);
     }

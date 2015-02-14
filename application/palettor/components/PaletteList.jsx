@@ -8,27 +8,26 @@ var PaletteList = React.createClass({
     Ambidex.mixinCreators.connectStoresToLocalState("MyPalettes"),
   ],
   render: function() {
-    console.log('PaletteList state=', this.state);
     return (
       <div className="PaletteList">
         <h1>Palettes</h1>
         <div className= "Palettes">
           {
             this.state.myPalettes.map(
-              palette =>  ( 
+              palette => ( 
                 <div>
                   <h2>{ palette.name }</h2>
                   <ul>{
                       palette.hexList.map(
-                        color =>  (
+                        color => (
                           <li
                             style= {
                               {
-                                width:            16,
-                                height:           16,
-                                margin:           8,
-                                backgroundColor:  color,
-                                listStyle:        "none"
+                                width: 16,
+                                height: 16,
+                                margin: 8,
+                                backgroundColor: color,
+                                listStyle: "none"
                               }
                             }
                           />
@@ -48,11 +47,3 @@ var PaletteList = React.createClass({
 
 module.exports = PaletteList;
 
-
-/*{this.state.map(
-            palette => {
-              console.log('palette in PaletteList', palette);
-
-            }
-          )}*/
-//<PaletteItem model={ palette } key={ palette._id }/>

@@ -19,6 +19,10 @@ This is an example app built with [**Ambidex**](https://github.com/appsforartist
 #### Start the server ###
     npm start
 
+  -if you don't want to run the server locally test the production settings which hit the web service hosted on heroku by setting NODE_ENV
+
+    `NODE_ENV=production npm start`    
+
 #### Navigate to the appropriate page in your browser ####
  - http://bikeindex.local:8080/
 
