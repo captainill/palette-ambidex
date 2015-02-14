@@ -16,7 +16,7 @@ module.exports = {
 
   CUSTOM_SETTINGS: {
     STATIC_URL: "/static/",
-    API_BASE_URL: "https://palette-restify.herokuapp.com/api/v1/palettes/",
+    API_BASE_URL: "https://palette-restify.herokuapp.com/api/v1/",
     ACTIONS_UPDATE_CACHED_DATA: true
   }
 };
