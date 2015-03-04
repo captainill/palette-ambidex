@@ -4,12 +4,18 @@ var Lazy = require("lazy.js");
 
 var Palettes = {
   actions: [
-    "getAllPalettes"
+    'getAllPalettes',
+    'getCurrentPaletteById'
   ],
 
   store: Object.assign({
     init: function () {
       this.state = {};
+    },
+
+    onGetCurrentPaletteById: function () {
+      this.state = null;
+      this.trigger(this.state);
     },
 
     onGetAllPalettes: function () {
